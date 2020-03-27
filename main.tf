@@ -7,6 +7,14 @@
 # * An Ubuntu Linux server running Apache
 
 ##############################################################################
+
+# Configure the Azure Provider
+provider "azurerm" {
+  # whilst the `version` attribute is optional, we recommend pinning to a given version of the Provider
+  version = "=2.0.0"
+  features {}
+}
+
 # Shared infrastructure resources
 
 # First we'll create a resource group. In Azure every resource belongs to a 
